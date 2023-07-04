@@ -10,23 +10,12 @@
 
 ## Project Setup:
 This code challenge has been handled using JavaScript.
-
-In order for you to use the content on this repo ensure you have the following:
-
-
-
-
-## Running application
-
-
-
-## Technology used
 - HTML
 - Javascript
 - style.css 
  
 ## Author
-Project contributed to by:
+ By:
 {
     https://github.com/saidfaris
 }
