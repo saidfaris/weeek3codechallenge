@@ -1,60 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/theater.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&family=Kenia&family=Lobster&family=Nerko+One&family=Oswald&family=Roboto+Slab:wght@300;400&family=Rubik+80s+Fade&family=Rubik+Distressed&family=Rubik+Gemstones&family=Rubik+Storm&family=Rubik+Vinyl&family=Zen+Dots&display=swap" rel="stylesheet">
-    <title>Flatdango Theater</title>
-</head>
-<body>
-    <div class="nav">
-       <img src="./img/theater.png" alt="">
-       <p id="header">Flatdango Movie Theater</p>
-       <img src="./img/discount.png" alt="">
-    </div>
-    <div class="movies">
-        <p>Upcoming Movies</p>
-        <ul id="moviesTitle"></ul>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./index.js" defer></script>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
+		/>
 
-    <div class="details">
-        <p id="name">Movie Name</p>
-        <img src="https://m.media-amazon.com/images/M/MV5BZjE2ZWIwMWEtNGFlMy00ZjYzLWEzOWEtYzQ0MDAwZDRhYzNjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" alt="movie" id="poster">
-        <p>Description: <span id="description">Movie Description</span></p>
-        <p>Runtime: <span id="runtime">Duration</span></p>
-        <p>Showtime: <span id="showtime">Time</span></p>
-        <p>Capacity: <span id="capacity">Capacity</span></p>
-        <p>Tickets Sold: <span id="sold">Sold</span></p>
-        <p>Tickets Available: <span id="available"></span></p>
+		<title>Flatdango</title>
+	</head>
 
-        <div class="tickets">
-            <button id="btn"><img src="./img/buy.png" alt=""></button>
-        </div>
+	<body>
+		<header>
+			<i class="fa-solid fa-film"></i>
+			<h1>Flatdango Theater</h1>
+		</header>
 
-    </div>
-
-    <div class="koz">
-        <img src="./img/success.png" alt="" id="habib">
-        <p id="tick">You have successfuly purchased a Ticket</p>
-        <p id="fat"></p>
-        <p class="common">Ticket No. 20</p>
-        <p id="ticket" class="common"></p>
-        <p id="show" class="common"></p>
-        <p id="run" class="common"></p>
-        <div class="said2">
-            <img src="./img/exclamation.png" alt="" id="said">
-            <p>Once tickets are purchased they are not refurndable</p>
-            <p>Please food from outside is not allowed</p>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-</body>
+		<main>
+			<section class="movie-list"></section>
+			<section class="placeholder"></section>
+		</main>
+	</body>
 </html>
