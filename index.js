@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://al-hajjar.github.io/flatdangocodechallenge/db.json")
-    .then((res) => res.json())
-    .then((data) => {
-      movieList(data.films);
-    });
+  fetch('films.json')
+  .then(response => response.json())
+  .then(data => {
+    const films = data.films;
+    console.log(films); 
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
 
   function movieList(data) {
     data.forEach((movie) => {
